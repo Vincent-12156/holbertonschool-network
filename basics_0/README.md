@@ -31,7 +31,7 @@ A LAN is a network that connects devices in a limited area.
 - A few meters up to a few kilometers
 - Usually within a single building or campus
 
-### MAC adress (Media Access Control address)
+## MAC adress (Media Access Control address)
 
 Unique hardware identifier assigned to a network interface card (NIC) by the manufacturer.
 
