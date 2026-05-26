@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
 # Configure localhost and facebook.com resolution
-sudo sed -i 's/^127.0.0.1[[:space:]]*localhost/127.0.0.2 localhost/' /etc/hosts
-echo "8.8.8.8 facebook.com" | sudo tee -a /etc/hosts > /dev/null
+
+cp /etc/hosts /tmp/hosts
+
+sed -i 's/127.0.0.1 localhost/127.0.0.2 localhost/' /tmp/hosts
+
+echo "8.8.8.8 facebook.com" >> /tmp/hosts
+
+cat /tmp/hosts > /etc/hosts
